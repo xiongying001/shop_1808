@@ -1,0 +1,21 @@
+spring:
+  thymeleaf:
+    cache: false
+  servlet:
+    multipart:
+      max-request-size: 10MB
+server:
+  port: 8080
+fdfs:
+  tracker-list: 192.168.43.222:22122
+  thumb-image:
+    height: 100
+    width: 100
+  pool:
+    jmx-enabled: false
+  ippath: http://192.168.43.222/
+dubbo:
+  registry:
+    address: zookeeper://192.168.43.222:2181
+  application:
+    name: shop_back
